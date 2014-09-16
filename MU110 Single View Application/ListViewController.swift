@@ -7,11 +7,14 @@
 //
 
 import UIKit
-import Alamofire
 
 class ListViewController: UITableViewController {
     
-    var items: NSArray?
+    var lectureList:NSArray?{
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,34 +25,30 @@ class ListViewController: UITableViewController {
         
         self.navigationItem.title = "Лекции"
         
-        /*
-        //if (!user.isLogedIn) {
-       
-       // }
-      */
+        loadDataFromServer()
+        
+    }
+    
+    
+    
+    func loadDataFromServer () {
         
         
-        
-        Alamofire.request(.GET, "http://weekly.master-up.net/api/v1/lecture/list/").responseJSON {
-            (request, response, JSON, error) -> Void in
+        WeeklyAPI.sharedInstance.getAllLectures { (Lectures) -> () in
+            println(Lectures)
             
-            println(JSON)
-            
-            self.items = JSON as NSMutableArray
-            
+            self.lectureList = Lectures
             self.tableView.reloadData()
-            
-            
         }
         
     }
     
+    
+    
     func showLoginController() {
         let loginController: UIViewController = UIStoryboard(name: "Authentication", bundle: nil).instantiateInitialViewController() as UIViewController
         
-        
         navigationController!.presentViewController(loginController, animated: false, completion: nil)
-        
         
     }
     
@@ -66,14 +65,11 @@ class ListViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        if let count = self.items?.count {
-            
-            return count
-            
-        } else {
-            
-            return 0
+        if let _list:NSArray = lectureList {
+            return _list.count
         }
+        
+        return 0
         
     }
     
@@ -81,11 +77,9 @@ class ListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         
-        if let item = self.items {
-            
-            let dictionary = item[indexPath.row] as NSDictionary
-            
-            cell.textLabel?.text = dictionary["name"] as NSString
+        if let _list:NSArray = lectureList {
+            let _lectureItem = _list[indexPath.row] as Lecture;
+            cell.textLabel?.text = _lectureItem.name
         }
         
         return cell
@@ -94,20 +88,20 @@ class ListViewController: UITableViewController {
     }
     
     
-    
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = items![indexPath.row] as NSDictionary
-                (segue.destinationViewController as DetailViewController).detailItem = object
+            
+            if let indexPath = tableView.indexPathForSelectedRow() {
                 
+                if let _list: NSArray = lectureList {
+                    let _lectureItem = _list[indexPath.row] as Lecture
+                    (segue.destinationViewController as DetailViewController).detailItem = _lectureItem
+                }
                 
             }
         }
+        
     }
     
     
-    
 }
-

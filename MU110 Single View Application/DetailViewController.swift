@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailDate: UILabel!
     
-    var detailItem: NSDictionary? {
+    var detailItem: Lecture? {
         didSet {
             // Update the view.
             self.configureView()
@@ -23,17 +23,17 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail: NSDictionary = self.detailItem {
+        if let detail: Lecture = self.detailItem {
             
             if let label = self.detailDescriptionLabel {
-                label.text = detail["description"] as NSString
+                label.text = detail.descr
             }
             
             if let date = self.detailDate {
-                date.text = detail["data"] as NSString
+                date.text = detail.date
             }
             
-            self.navigationItem.title = detail["name"] as NSString
+            self.navigationItem.title = detail.name
             
         }
     }

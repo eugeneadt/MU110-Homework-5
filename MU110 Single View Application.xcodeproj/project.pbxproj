@@ -17,6 +17,7 @@
 		442CC09319C8AC0200FC7138 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CC09219C8AC0200FC7138 /* LoginViewController.swift */; };
 		442CC09519C8B96400FC7138 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CC09419C8B96400FC7138 /* User.swift */; };
 		442CC09819C8BA0000FC7138 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CC09719C8BA0000FC7138 /* Lecture.swift */; };
+		442CC09B19C8BB8400FC7138 /* WeeklyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CC09A19C8BB8400FC7138 /* WeeklyAPI.swift */; };
 		44D3C52819C0684D00069CC7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D3C52719C0684D00069CC7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		442CC09219C8AC0200FC7138 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		442CC09419C8B96400FC7138 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		442CC09719C8BA0000FC7138 /* Lecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+		442CC09A19C8BB8400FC7138 /* WeeklyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyAPI.swift; sourceTree = "<group>"; };
 		44D3C52719C0684D00069CC7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,12 +104,10 @@
 		441250D119BF13B6008A05DB /* MU110 Single View Application */ = {
 			isa = PBXGroup;
 			children = (
-				442CC09619C8B96C00FC7138 /* Model */,
+				442CC09619C8B96C00FC7138 /* Models */,
 				441250D419BF13B6008A05DB /* AppDelegate.swift */,
-				441250D619BF13B6008A05DB /* ListViewController.swift */,
-				44D3C52719C0684D00069CC7 /* DetailViewController.swift */,
-				442CC09219C8AC0200FC7138 /* LoginViewController.swift */,
-				441250F119BF13D0008A05DB /* Storyboards */,
+				442CC09919C8BB1900FC7138 /* Controllers */,
+				441250F119BF13D0008A05DB /* Views */,
 				441250DB19BF13B6008A05DB /* Images.xcassets */,
 				441250D219BF13B6008A05DB /* Supporting Files */,
 			);
@@ -140,13 +140,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		441250F119BF13D0008A05DB /* Storyboards */ = {
+		441250F119BF13D0008A05DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				441250D819BF13B6008A05DB /* Main.storyboard */,
 				441250F219BF1427008A05DB /* Authentication.storyboard */,
 			);
-			name = Storyboards;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		442CC08919C8AB3A00FC7138 /* Products */ = {
@@ -158,13 +158,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		442CC09619C8B96C00FC7138 /* Model */ = {
+		442CC09619C8B96C00FC7138 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				442CC09419C8B96400FC7138 /* User.swift */,
 				442CC09719C8BA0000FC7138 /* Lecture.swift */,
+				442CC09A19C8BB8400FC7138 /* WeeklyAPI.swift */,
 			);
-			name = Model;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		442CC09919C8BB1900FC7138 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				441250D619BF13B6008A05DB /* ListViewController.swift */,
+				44D3C52719C0684D00069CC7 /* DetailViewController.swift */,
+				442CC09219C8AC0200FC7138 /* LoginViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442CC09819C8BA0000FC7138 /* Lecture.swift in Sources */,
+				442CC09B19C8BB8400FC7138 /* WeeklyAPI.swift in Sources */,
 				442CC09319C8AC0200FC7138 /* LoginViewController.swift in Sources */,
 				44D3C52819C0684D00069CC7 /* DetailViewController.swift in Sources */,
 				441250D719BF13B6008A05DB /* ListViewController.swift in Sources */,
