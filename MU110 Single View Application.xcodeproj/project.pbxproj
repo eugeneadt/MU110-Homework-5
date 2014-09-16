@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		441250D519BF13B6008A05DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441250D419BF13B6008A05DB /* AppDelegate.swift */; };
+		441250D719BF13B6008A05DB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441250D619BF13B6008A05DB /* ListViewController.swift */; };
+		441250DA19BF13B6008A05DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441250D819BF13B6008A05DB /* Main.storyboard */; };
+		441250DC19BF13B6008A05DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441250DB19BF13B6008A05DB /* Images.xcassets */; };
+		441250E819BF13B6008A05DB /* MU110_Single_View_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441250E719BF13B6008A05DB /* MU110_Single_View_ApplicationTests.swift */; };
+		441250F319BF1427008A05DB /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441250F219BF1427008A05DB /* Authentication.storyboard */; };
+		442CC09119C8AB5100FC7138 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442CC08E19C8AB3A00FC7138 /* Alamofire.framework */; };
+		442CC09319C8AC0200FC7138 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CC09219C8AC0200FC7138 /* LoginViewController.swift */; };
+		442CC09519C8B96400FC7138 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CC09419C8B96400FC7138 /* User.swift */; };
+		442CC09819C8BA0000FC7138 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CC09719C8BA0000FC7138 /* Lecture.swift */; };
+		44D3C52819C0684D00069CC7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D3C52719C0684D00069CC7 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		441250E219BF13B6008A05DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441250C719BF13B6008A05DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 441250CE19BF13B6008A05DB;
+			remoteInfo = "MU110 Single View Application";
+		};
+		442CC08D19C8AB3A00FC7138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442CC08819C8AB3A00FC7138 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		442CC08F19C8AB3A00FC7138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442CC08819C8AB3A00FC7138 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		441250CF19BF13B6008A05DB /* MU110 Single View Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MU110 Single View Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		441250D319BF13B6008A05DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441250D419BF13B6008A05DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		441250D619BF13B6008A05DB /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		441250D919BF13B6008A05DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		441250DB19BF13B6008A05DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		441250E119BF13B6008A05DB /* MU110 Single View ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MU110 Single View ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		441250E619BF13B6008A05DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441250E719BF13B6008A05DB /* MU110_Single_View_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MU110_Single_View_ApplicationTests.swift; sourceTree = "<group>"; };
+		441250F219BF1427008A05DB /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		442CC08819C8AB3A00FC7138 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../SDKs/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		442CC09219C8AC0200FC7138 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		442CC09419C8B96400FC7138 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		442CC09719C8BA0000FC7138 /* Lecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+		44D3C52719C0684D00069CC7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		441250CC19BF13B6008A05DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442CC09119C8AB5100FC7138 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441250DE19BF13B6008A05DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		441250C619BF13B6008A05DB = {
+			isa = PBXGroup;
+			children = (
+				441250D119BF13B6008A05DB /* MU110 Single View Application */,
+				441250E419BF13B6008A05DB /* MU110 Single View ApplicationTests */,
+				441250D019BF13B6008A05DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		441250D019BF13B6008A05DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				441250CF19BF13B6008A05DB /* MU110 Single View Application.app */,
+				441250E119BF13B6008A05DB /* MU110 Single View ApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		441250D119BF13B6008A05DB /* MU110 Single View Application */ = {
+			isa = PBXGroup;
+			children = (
+				442CC09619C8B96C00FC7138 /* Model */,
+				441250D419BF13B6008A05DB /* AppDelegate.swift */,
+				441250D619BF13B6008A05DB /* ListViewController.swift */,
+				44D3C52719C0684D00069CC7 /* DetailViewController.swift */,
+				442CC09219C8AC0200FC7138 /* LoginViewController.swift */,
+				441250F119BF13D0008A05DB /* Storyboards */,
+				441250DB19BF13B6008A05DB /* Images.xcassets */,
+				441250D219BF13B6008A05DB /* Supporting Files */,
+			);
+			path = "MU110 Single View Application";
+			sourceTree = "<group>";
+		};
+		441250D219BF13B6008A05DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				442CC08819C8AB3A00FC7138 /* Alamofire.xcodeproj */,
+				441250D319BF13B6008A05DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		441250E419BF13B6008A05DB /* MU110 Single View ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				441250E719BF13B6008A05DB /* MU110_Single_View_ApplicationTests.swift */,
+				441250E519BF13B6008A05DB /* Supporting Files */,
+			);
+			path = "MU110 Single View ApplicationTests";
+			sourceTree = "<group>";
+		};
+		441250E519BF13B6008A05DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				441250E619BF13B6008A05DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		441250F119BF13D0008A05DB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				441250D819BF13B6008A05DB /* Main.storyboard */,
+				441250F219BF1427008A05DB /* Authentication.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		442CC08919C8AB3A00FC7138 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442CC08E19C8AB3A00FC7138 /* Alamofire.framework */,
+				442CC09019C8AB3A00FC7138 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442CC09619C8B96C00FC7138 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				442CC09419C8B96400FC7138 /* User.swift */,
+				442CC09719C8BA0000FC7138 /* Lecture.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		441250CE19BF13B6008A05DB /* MU110 Single View Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441250EB19BF13B6008A05DB /* Build configuration list for PBXNativeTarget "MU110 Single View Application" */;
+			buildPhases = (
+				441250CB19BF13B6008A05DB /* Sources */,
+				441250CC19BF13B6008A05DB /* Frameworks */,
+				441250CD19BF13B6008A05DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MU110 Single View Application";
+			productName = "MU110 Single View Application";
+			productReference = 441250CF19BF13B6008A05DB /* MU110 Single View Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		441250E019BF13B6008A05DB /* MU110 Single View ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441250EE19BF13B6008A05DB /* Build configuration list for PBXNativeTarget "MU110 Single View ApplicationTests" */;
+			buildPhases = (
+				441250DD19BF13B6008A05DB /* Sources */,
+				441250DE19BF13B6008A05DB /* Frameworks */,
+				441250DF19BF13B6008A05DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				441250E319BF13B6008A05DB /* PBXTargetDependency */,
+			);
+			name = "MU110 Single View ApplicationTests";
+			productName = "MU110 Single View ApplicationTests";
+			productReference = 441250E119BF13B6008A05DB /* MU110 Single View ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		441250C719BF13B6008A05DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "iOS Lab";
+				TargetAttributes = {
+					441250CE19BF13B6008A05DB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					441250E019BF13B6008A05DB = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 441250CE19BF13B6008A05DB;
+					};
+				};
+			};
+			buildConfigurationList = 441250CA19BF13B6008A05DB /* Build configuration list for PBXProject "MU110 Single View Application" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 441250C619BF13B6008A05DB;
+			productRefGroup = 441250D019BF13B6008A05DB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 442CC08919C8AB3A00FC7138 /* Products */;
+					ProjectRef = 442CC08819C8AB3A00FC7138 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				441250CE19BF13B6008A05DB /* MU110 Single View Application */,
+				441250E019BF13B6008A05DB /* MU110 Single View ApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		442CC08E19C8AB3A00FC7138 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 442CC08D19C8AB3A00FC7138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		442CC09019C8AB3A00FC7138 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 442CC08F19C8AB3A00FC7138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		441250CD19BF13B6008A05DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441250F319BF1427008A05DB /* Authentication.storyboard in Resources */,
+				441250DA19BF13B6008A05DB /* Main.storyboard in Resources */,
+				441250DC19BF13B6008A05DB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441250DF19BF13B6008A05DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		441250CB19BF13B6008A05DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442CC09819C8BA0000FC7138 /* Lecture.swift in Sources */,
+				442CC09319C8AC0200FC7138 /* LoginViewController.swift in Sources */,
+				44D3C52819C0684D00069CC7 /* DetailViewController.swift in Sources */,
+				441250D719BF13B6008A05DB /* ListViewController.swift in Sources */,
+				442CC09519C8B96400FC7138 /* User.swift in Sources */,
+				441250D519BF13B6008A05DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441250DD19BF13B6008A05DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441250E819BF13B6008A05DB /* MU110_Single_View_ApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		441250E319BF13B6008A05DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 441250CE19BF13B6008A05DB /* MU110 Single View Application */;
+			targetProxy = 441250E219BF13B6008A05DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		441250D819BF13B6008A05DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				441250D919BF13B6008A05DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		441250E919BF13B6008A05DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		441250EA19BF13B6008A05DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		441250EC19BF13B6008A05DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "MU110 Single View Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		441250ED19BF13B6008A05DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "MU110 Single View Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		441250EF19BF13B6008A05DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MU110 Single View ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MU110 Single View Application.app/MU110 Single View Application";
+			};
+			name = Debug;
+		};
+		441250F019BF13B6008A05DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MU110 Single View ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MU110 Single View Application.app/MU110 Single View Application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		441250CA19BF13B6008A05DB /* Build configuration list for PBXProject "MU110 Single View Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441250E919BF13B6008A05DB /* Debug */,
+				441250EA19BF13B6008A05DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		441250EB19BF13B6008A05DB /* Build configuration list for PBXNativeTarget "MU110 Single View Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441250EC19BF13B6008A05DB /* Debug */,
+				441250ED19BF13B6008A05DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		441250EE19BF13B6008A05DB /* Build configuration list for PBXNativeTarget "MU110 Single View ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441250EF19BF13B6008A05DB /* Debug */,
+				441250F019BF13B6008A05DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 441250C719BF13B6008A05DB /* Project object */;
+}
