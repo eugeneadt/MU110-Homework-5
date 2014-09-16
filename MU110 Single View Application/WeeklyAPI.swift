@@ -28,24 +28,14 @@ class WeeklyAPI: NSObject {
     
     func getAllLectures (Result: (NSArray?) -> Void ) {
         
-        //  Alamofire.request(.GET, "http://weekly.master-up.net/api/v1/lecture/list/").responseJSON {
-        //      (request, response, JSON, error) -> Void in
-        
-        //      println(JSON)
-        
-        //   self.items = JSON as NSMutableArray
-        
-        // self.tableView.reloadData()
-        
-        
         Alamofire.request(.GET, "http://weekly.master-up.net/api/v1/lecture/list/").responseJSON {
             (request, response, JSON, error) in
             
             var _lectureList:NSMutableArray = []
-            if let _JSON:NSArray = JSON as? NSArray
-            {
-                for _object in _JSON
-                {
+            
+            if let _JSON:NSArray = JSON as? NSArray {
+                
+                for _object in _JSON {
                     let _lecture = Lecture()
                     let _obj:NSDictionary = _object as NSDictionary
                     
@@ -63,14 +53,10 @@ class WeeklyAPI: NSObject {
             }
             
             
-            
-            
-            
         }
         
-        
-        
     }
+    
     
     
 }

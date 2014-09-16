@@ -27,13 +27,9 @@ class DetailViewController: UIViewController {
             
             if let label = self.detailDescriptionLabel {
                 label.text = detail.descr
+                detailDate.text = detail.date
+                self.navigationItem.title = detail.name
             }
-            
-            if let date = self.detailDate {
-                date.text = detail.date
-            }
-            
-            self.navigationItem.title = detail.name
             
         }
     }
