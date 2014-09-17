@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 
-
 class WeeklyAPI: NSObject {
     
     class var sharedInstance: WeeklyAPI {
@@ -52,34 +51,8 @@ class WeeklyAPI: NSObject {
                 Result (_lectureList)
             }
             
-            
         }
         
     }
     
-    
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

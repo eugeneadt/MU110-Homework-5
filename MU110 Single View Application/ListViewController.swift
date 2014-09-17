@@ -30,15 +30,22 @@ class ListViewController: UITableViewController {
     }
     
     
+    @IBAction func logout(sender: AnyObject) {
+        
+       showLoginController ()
+        
+    }
+    
     
     func loadDataFromServer () {
         
         
         WeeklyAPI.sharedInstance.getAllLectures { (Lectures) -> () in
+            
             println(Lectures)
             
             self.lectureList = Lectures
-            self.tableView.reloadData()
+           // self.tableView.reloadData()
         }
         
     }
@@ -48,7 +55,7 @@ class ListViewController: UITableViewController {
     func showLoginController() {
         let loginController: UIViewController = UIStoryboard(name: "Authentication", bundle: nil).instantiateInitialViewController() as UIViewController
         
-        navigationController!.presentViewController(loginController, animated: false, completion: nil)
+        navigationController!.presentViewController(loginController, animated: true, completion: nil)
         
     }
     
@@ -83,7 +90,6 @@ class ListViewController: UITableViewController {
         }
         
         return cell
-        
         
     }
     

@@ -89,7 +89,13 @@
                             <outlet property="delegate" destination="yob-no-O4q" id="5dN-Ip-D1e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Main" id="Y7Y-xR-pBl"/>
+                    <navigationItem key="navigationItem" title="Main" id="Y7Y-xR-pBl">
+                        <barButtonItem key="rightBarButtonItem" title="Выйти" id="Jb9-O8-t3v">
+                            <connections>
+                                <action selector="logout:" destination="yob-no-O4q" id="4DX-hK-Kf7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0r-6d-PGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
